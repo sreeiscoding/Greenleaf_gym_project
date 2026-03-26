@@ -1014,6 +1014,26 @@ img {
     font-size: 0.98rem;
   }
 
+  .hero-actions {
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .hero-actions .btn {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .hero-highlights {
+    gap: 8px;
+  }
+
+  .hero-highlights .pill {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
   .nav-shell {
     width: min(100% - 24px, 1400px);
   }
