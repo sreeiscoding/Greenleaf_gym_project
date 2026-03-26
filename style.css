@@ -1053,6 +1053,10 @@ img {
     font-size: 0.75rem;
   }
 
+  .eyebrow {
+    font-size: 0.64rem;
+  }
+
   .nav-shell {
     width: min(100% - 24px, 1400px);
   }
