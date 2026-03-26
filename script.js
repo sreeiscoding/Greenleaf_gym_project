@@ -20,6 +20,15 @@ navAnchors.forEach((link) => {
   });
 });
 
+document.addEventListener('click', (event) => {
+  if (!navLinks || !menuToggle) return;
+  if (!navLinks.classList.contains('open')) return;
+  const target = event.target;
+  if (navLinks.contains(target) || menuToggle.contains(target)) return;
+  navLinks.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+});
+
 const moveCtaForMobile = () => {
   if (!navCta || !navLinks || !navInner) return;
   if (window.innerWidth <= 860) {
