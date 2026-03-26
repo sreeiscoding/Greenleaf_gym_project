@@ -1117,8 +1117,8 @@ img {
   }
 
   .footer-bottom {
-    flex-direction: column;
-    gap: 4px;
+    display: block;
+    text-align: center;
   }
 
   .footer .copyright {
