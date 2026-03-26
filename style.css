@@ -1029,6 +1029,15 @@ img {
   .services-grid .card:last-child {
     grid-column: span 1;
   }
+
+  .services .card {
+    text-align: center;
+  }
+
+  .services .service-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 860px) {
