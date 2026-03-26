@@ -903,7 +903,7 @@ img {
 .made-by-name {
   position: relative;
   color: var(--green-dark);
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
 }
 
