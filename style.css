@@ -1116,7 +1116,16 @@ img {
     padding: 40px 0;
   }
 
+  .footer-bottom {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .footer .copyright {
+    font-size: 0.74rem;
+  }
+
   .made-by {
-    font-size: 0.8rem;
+    font-size: 0.68rem;
   }
 }
