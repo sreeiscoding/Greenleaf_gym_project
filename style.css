@@ -986,3 +986,69 @@ img {
     height: 240px;
   }
 }
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-shell {
+    width: min(100% - 24px, 1220px);
+    margin-top: 64px;
+  }
+
+  .hero-grid {
+    gap: 24px;
+    padding: 28px 0 10px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 7vw, 2.8rem);
+  }
+
+  .hero-sub {
+    font-size: 0.98rem;
+  }
+
+  .nav-shell {
+    width: min(100% - 24px, 1400px);
+  }
+
+  .nav-inner {
+    padding: 8px 14px;
+  }
+
+  .services-shell,
+  .contact-shell,
+  .about-shell-wrap {
+    width: min(100% - 24px, 1140px);
+  }
+
+  .services-shell {
+    padding: 24px 18px 28px;
+  }
+
+  .contact-shell {
+    padding: 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .about-image {
+    height: 220px;
+  }
+
+  .why-grid {
+    gap: 14px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
