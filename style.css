@@ -470,7 +470,7 @@ img {
 .about-shell {
   padding: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 250, 251, 0.92));
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
   border: none;
   position: relative;
   overflow: hidden;
@@ -1092,7 +1092,7 @@ img {
 
 @media (max-width: 860px) {
   .nav-shell {
-    width: min(100% - 24px, 1400px);
+    width: min(100% - 32px, 1400px);
   }
   .nav-links {
     position: absolute;
@@ -1243,7 +1243,7 @@ img {
   }
 
   .nav-shell {
-    width: 100%;
+    width: min(100% - 24px, 1400px);
   }
 
   .nav-inner {
