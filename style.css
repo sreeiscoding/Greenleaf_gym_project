@@ -900,6 +900,48 @@ img {
   color: #64748b;
 }
 
+.made-by-name {
+  position: relative;
+  color: var(--green-dark);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.made-by-name::after {
+  content: "Visit Sree";
+  position: absolute;
+  left: 50%;
+  bottom: 140%;
+  transform: translateX(-50%);
+  background: #111827;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.made-by-name::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 118%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #111827 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.made-by-name:hover::after,
+.made-by-name:hover::before {
+  opacity: 1;
+}
+
 @media (max-width: 980px) {
   .services .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
