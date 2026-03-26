@@ -108,7 +108,7 @@ img {
 }
 
 .nav-shell {
-  width: min(100% - 32px, 1400px);
+  width: min(70%, 980px);
   margin: 0 auto;
 }
 
