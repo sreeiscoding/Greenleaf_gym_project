@@ -3,6 +3,8 @@ const navLinks = document.querySelector('.nav-links');
 const navAnchors = document.querySelectorAll('.nav-links a');
 const header = document.querySelector('.site-header');
 const heroSection = document.querySelector('.hero');
+const navCta = document.querySelector('.nav-cta');
+const navInner = document.querySelector('.nav-inner');
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => {
@@ -18,6 +20,17 @@ navAnchors.forEach((link) => {
   });
 });
 
+const moveCtaForMobile = () => {
+  if (!navCta || !navLinks || !navInner) return;
+  if (window.innerWidth <= 860) {
+    if (!navLinks.contains(navCta)) {
+      navLinks.appendChild(navCta);
+    }
+  } else if (navLinks.contains(navCta)) {
+    navInner.appendChild(navCta);
+  }
+};
+
 const updateHeaderState = () => {
   if (!header || !heroSection) return;
   const heroBottom = heroSection.getBoundingClientRect().bottom + window.scrollY;
@@ -27,5 +40,9 @@ const updateHeaderState = () => {
 };
 
 updateHeaderState();
+moveCtaForMobile();
 window.addEventListener('scroll', () => requestAnimationFrame(updateHeaderState));
-window.addEventListener('resize', updateHeaderState);
+window.addEventListener('resize', () => {
+  updateHeaderState();
+  moveCtaForMobile();
+});
