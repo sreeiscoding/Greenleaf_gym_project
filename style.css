@@ -988,6 +988,25 @@ img {
 }
 
 @media (max-width: 420px) {
+  body {
+    font-size: 0.94rem;
+  }
+
+  h1 {
+    font-size: clamp(2.1rem, 7vw, 2.6rem);
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 5vw, 2rem);
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
   .container {
     padding: 0 18px;
   }
