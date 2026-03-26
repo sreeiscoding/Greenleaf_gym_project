@@ -1302,6 +1302,10 @@ img {
     font-size: 0.68rem;
   }
 
+  .contact-info .btn {
+    margin-top: 10px;
+  }
+
   .service-icon {
     width: 44px;
     height: 44px;
