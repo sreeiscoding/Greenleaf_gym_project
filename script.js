@@ -55,3 +55,24 @@ window.addEventListener('resize', () => {
   updateHeaderState();
   moveCtaForMobile();
 });
+
+const revealTargets = document.querySelectorAll(
+  '.section, .card, .about-shell-wrap, .services-shell, .contact-shell, .footer'
+);
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
+
+revealTargets.forEach((el) => {
+  el.classList.add('reveal');
+  revealObserver.observe(el);
+});
